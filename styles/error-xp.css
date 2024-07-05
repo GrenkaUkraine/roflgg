@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'WindowsXPTahoma';
+    src: url('/src/error-xp/windows-xp-tahoma.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'WindowsXPTahoma';
+    font-size: large;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("/src/error-xp/background.jpg");
+    background-size: cover;
+}
+
+.error-card {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: wheat;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.error-card .top {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px 0;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.error-card .bottom {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.error-card .bottom img {
+    height: 25px;
+}
+
+.error-card .description {
+    text-wrap: wrap;
+    width: 300px;
+}
+
+.error-card #ok-button {
+    padding: 2px 30px;
+}
