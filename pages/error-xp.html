@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>error xp</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="/styles/error-xp.css">
 </head>
-<body>
+<body translate="no">
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
     <div class="error-card">
         <div class="top">
-            <span>Error title</span>
-            <button id="close-button">X</button>
+            Error title
+            <button id="close-button"><span class="material-symbols-outlined">close</span></button>
         </div>
         <div class="bottom">
-            <img src="/src/error-xp/Critical.png">
             <div class="description">
-                Error description
+                <img src="/src/error-xp/Critical.png">
+                <span>
+                    Error description
+                </span>
             </div>
+            <button id="ok-button">OK</button>
         </div>
-        <button id="ok-button">OK</button>
     </div>
 </body>
 </html>

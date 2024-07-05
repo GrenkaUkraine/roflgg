@@ -20,52 +20,57 @@ body {
 }
 
 .error-card {
+    top: 20px;
+    left: 20px;
     position: absolute;
     display: flex;
-    align-items: flex-start;
-    align-content: center;
-    justify-content: flex-start;
+    align-items: stretch;
+    justify-content: stretch;
     flex-direction: column;
-    background-color: wheat;
-
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    gap: 0px;
 }
 
 .error-card .top {
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-    padding: 5px 0;
     display: flex;
-    align-items: flex-start;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    padding: 7px;
+    border-radius: 11px 11px 0 0;
+    color: white;
+    background: linear-gradient(180deg, #0367f9 0%, #0055e8 15.5%, #0055e8 70.51%, #0367f9 83.01%, #0367f9 93.31%, #04259e 100%);
+}
 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.error-card .top button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: inset 4px 4px 4px 0 rgba(255, 255, 255, 0.25), inset -3px -3px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #edd69d 0%, #e85d45 50%, #ba0c0c 100%);
+}
+.error-card .top button:active {
+    box-shadow: inset -3px -3px 4px 0 rgba(0, 0, 0, 0.25), inset 4px 4px 4px 0 rgba(255, 255, 255, 0.25);
+    background: linear-gradient(135deg, #ba0c0c 0%, #e85d45 50%, #edd69d 100%);
 }
 
 .error-card .bottom {
     display: flex;
     align-items: center;
-    align-content: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(#ece9d8, #ece9d8) 50% 50%/calc(100% - 6px) calc(100% - 6px) no-repeat,
+            linear-gradient(0deg, #04198c 0%, #0638ba 14%, #0638ba 100%);
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding: 23px;
+    min-width: 300px;
 }
 
-.error-card .bottom img {
+.error-card .bottom .description img {
     height: 25px;
-}
-
-.error-card .description {
-    text-wrap: wrap;
-    width: 300px;
-}
-
-.error-card #ok-button {
-    padding: 2px 30px;
 }
