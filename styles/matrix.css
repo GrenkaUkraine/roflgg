@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    user-select: none;
+}
+
+.matrix-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: green; /* Цвет символов */
+    font-size: 16px;
+    font-family: monospace;
+    white-space: nowrap;
+    text-orientation:sideways;
+}
