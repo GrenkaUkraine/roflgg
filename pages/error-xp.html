@@ -21,18 +21,18 @@
     </style>
     <div class="error-card">
         <div class="top">
-            Error title
+            <span id="error-title">Error title</span>
             <button id="close-button"><span class="material-symbols-outlined">close</span></button>
         </div>
         <div class="bottom">
             <div class="description">
-                <img src="/src/error-xp/Critical.png">
-                <span>
-                    Error description
-                </span>
+                <img id="error-icon" src="/src/error-xp/Critical.png">
+                <span id="error-description">Error description</span>
             </div>
             <button id="ok-button">OK</button>
         </div>
     </div>
+    <audio id="error-sound" src="/src/error-xp/error.mp3"></audio>
+    <script src="/scripts/error-xp.js"></script>
 </body>
 </html>
