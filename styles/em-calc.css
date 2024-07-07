@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 35, 37);
+    width: auto;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 50px;
+    width: 40%;
+}
+
+.calculator span {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 10px;
+    width: 100%;
+}
+
+input {
+    background-color: black;
+    border: 0;
+    padding: 20px;
+    border-radius: 99px;
+}
+input::placeholder{
+    color: gray;
+}
+input::selection {
+    border: 0;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* Default background color */
+    background-color: transparent;
+}
+
+/* WebKit (Chrome, Safari) */
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+    background-color: black; /* Change this color to what you prefer */
+    border-radius: 5px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: black; /* Change this color to what you prefer */
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    border: 0;
+    padding: 20px;
+    width: 100%;
+    border-radius: 99px;
+}
+
+.quote {
+    font-weight: normal !important;
+    font-size: medium !important;
+    text-align: center;
+    min-height: 20px;
+}
+
+@keyframes moving-tesla {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.moving-tesla {
+    animation: moving-tesla 3s;
+}
+
+@keyframes rocket {
+	0% {
+		transform: translateY(-50);
+	}
+
+	100% {
+		transform: translateY(-5000%);
+	}
+}
+
+.rocket {
+    animation: rocket 3s;
+}
