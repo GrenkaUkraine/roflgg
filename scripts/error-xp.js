@@ -128,10 +128,10 @@ const errorDescriptions = [
 ];
 
 const errorIconPaths = [
-    "/src/error-xp/Critical.png",
-    "/src/error-xp/Critical.png",
-    "/src/error-xp/Critical.png",
-    "/src/error-xp/Alert.png"
+    "../src/error-xp/Critical.png",
+    "../src/error-xp/Critical.png",
+    "../src/error-xp/Critical.png",
+    "../src/error-xp/Alert.png"
 ]
 
 let zIndexCounter = 1; // Counter for z-index of error cards
