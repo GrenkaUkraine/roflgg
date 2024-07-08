@@ -106,6 +106,7 @@ button {
 
 .moving-tesla {
     animation: moving-tesla 3s;
+    position: absolute;
 }
 
 @keyframes rocket {

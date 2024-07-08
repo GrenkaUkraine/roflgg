@@ -19,6 +19,7 @@ body {
     overflow: hidden;
     background-image: url("/src/error-xp/background.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .error-card {
