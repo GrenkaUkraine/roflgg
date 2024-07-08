@@ -20,7 +20,7 @@ body {
 }
 
 body.ukraine {
-    background-image: url('/src/index/ukraine.gif');
+    background-image: url('src/index/ukraine.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -73,19 +73,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function showElonMuskImage() {
         body.innerHTML = `
             <div class="elon-musk-image">
-                <img src="/src/em-calc/elon-musk-image.jpg" alt="Elon Musk" style="width: 100vw; height: 100vh;">
+                <img src="../src/em-calc/elon-musk-image.jpg" alt="Elon Musk" style="width: 100vw; height: 100vh;">
             </div>
         `;
     }
 
     function changeBackgroundToMuskImage() {
-        body.style.backgroundImage = 'url(/src/em-calc/musk-background.jpg)';
+        body.style.backgroundImage = 'url(../src/em-calc/musk-background.jpg)';
         body.style.backgroundSize = 'cover';
     }
 
     function showMovingTesla() {
         const teslaImage = document.createElement('img');
-        teslaImage.src = '/src/em-calc/tesla.png';
+        teslaImage.src = '../src/em-calc/tesla.png';
         teslaImage.classList.add('moving-tesla');
         body.appendChild(teslaImage);
     

@@ -28,7 +28,7 @@ button.red-button {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-image: url('/src/red-button/button.svg');
+    background-image: url('../src/red-button/button.svg');
     background-color: transparent;
     background-size: cover;
     border: none;
@@ -38,20 +38,20 @@ button.red-button {
     height: 140px;
 }
 button.red-button:hover {
-    background-image: url('/src/red-button/button-hover.svg');
+    background-image: url('../src/red-button/button-hover.svg');
 }
 button.red-button:active {
-    background-image: url('/src/red-button/button-clicked.svg');
+    background-image: url('../src/red-button/button-clicked.svg');
 }
 
 button.red-button.brother {
-    background-image: url('/src/red-button/button-brother.svg') !important;
+    background-image: url('../src/red-button/button-brother.svg') !important;
 }
 button.red-button.brother:hover {
-    background-image: url('/src/red-button/button-brother-hover.svg') !important;
+    background-image: url('../src/red-button/button-brother-hover.svg') !important;
 }
 button.red-button.brother:active {
-    background-image: url('/src/red-button/button-brother-clicked.svg') !important;
+    background-image: url('../src/red-button/button-brother-clicked.svg') !important;
 }
 
 button.red-button.small {
