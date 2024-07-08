@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+    user-select: none;
+}
+
+body {
+    background-color: rgb(14, 14, 19);
+    color: whitesmoke;
+}
+
+span#title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+button.red-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url('/src/red-button/button.svg');
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    border-radius: 99px;
+
+    width: 140px;
+    height: 140px;
+}
+button.red-button:hover {
+    background-image: url('/src/red-button/button-hover.svg');
+}
+button.red-button:active {
+    background-image: url('/src/red-button/button-clicked.svg');
+}
+
+button.red-button.brother {
+    background-image: url('/src/red-button/button-brother.svg') !important;
+}
+button.red-button.brother:hover {
+    background-image: url('/src/red-button/button-brother-hover.svg') !important;
+}
+button.red-button.brother:active {
+    background-image: url('/src/red-button/button-brother-clicked.svg') !important;
+}
+
+button.red-button.small {
+    width: 40px;
+    height: 40px;
+}
+
+button.red-button.hide {
+    width: 20px;
+    height: 20px;
+}
