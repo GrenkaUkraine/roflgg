@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     redButton.addEventListener('click', function() {
+        document.body.innerHTML=null;
         window.close();
     });
 });
