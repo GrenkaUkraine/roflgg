@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Kombat Bot</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="preload" as="image" href="../../src/shark-kombat-bot/coin.png">
+    <link rel="preload" as="image" href="../../src/shark-kombat-bot/baby-shark.png">
+    <link rel="preload" as="image" href="../../src/shark-kombat-bot/billionaire-shark.png">
+    <link rel="preload" as="image" href="../../src/shark-kombat-bot/rich-shark.png">
+    <link rel="preload" as="image" href="../../src/shark-kombat-bot/teen-shark.png">
+    <link rel="preload" as="image" href="../../src/shark-kombat-bot/worker-shark.png">
+
+    <link rel="stylesheet" href="../../styles/shark-kombat-bot.css">
+    <link rel="stylesheet" href="../../styles/shark-kombat-bot/mining.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="card">
+                Profit per tap
+                <div class="description">
+                    <img src="../../src/shark-kombat-bot/coin.png">
+                    <span id="profit-per-tap">+1</span>
+                </div>
+            </div>
+            <div class="card">
+                New Level
+                <div class="description" id="next-level-cost">
+                    1K
+                </div>
+            </div>
+            <div class="card">
+                Profit per hour
+                <div class="description">
+                    <img src="../../src/shark-kombat-bot/coin.png">
+                    <span id="profit-per-hour">+0</span>
+                </div>
+            </div>
+        </header>
+        <div class="balance-container">
+            <img src="../../src/shark-kombat-bot/coin.png" alt="coin">
+            <span id="balance">0</span>
+        </div>
+        <div class="new-level-container">
+            <div class="current-level">
+                <span id="current-level-name">Baby</span>
+                <span id="current-level-progress">1/5</span>
+            </div>
+            <progress id="new-level" value="0" max="1000"></progress>
+        </div>
+
+        <div class="tap-coin" id="tap-coin">
+            <div class="coin">
+                <img id="shark-image" src="../../src/shark-kombat-bot/baby-shark.png" alt="baby-shark">
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="energy">
+                <span class="material-symbols-rounded icon">bolt</span>
+                <span id="energy">300 / 300</span>
+            </div>
+            <nav>
+                <div class="card active">
+                    <span class="material-symbols-rounded icon">touch_app</span>
+                    <span class="title">Tap</span>
+                </div>
+                <div class="card">
+                    <span class="material-symbols-rounded icon">payments</span>
+                    <span class="title">Earn</span>
+                </div>
+                <div class="card">
+                    <span class="material-symbols-rounded icon">rocket_launch</span>
+                    <span class="title">Boost</span>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <script src="../../scripts/shark-kombat-bot/mining.js"></script>
+</body>
+</html>
