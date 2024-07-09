@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const ukraineElement = document.getElementById("ukraine");
     const anthem = document.getElementById("ukraine-anthem");
 
+    const redButton = document.getElementById("red-button");
+
     ggElement.addEventListener('click', function() {
         titleElement.classList.toggle('rainbow');
     });
@@ -17,5 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
             anthem.pause();
             anthem.currentTime = 0;
         }
+    });
+
+    redButton.addEventListener('click', function() {
+        window.close();
     });
 });

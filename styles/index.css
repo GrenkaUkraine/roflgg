@@ -137,3 +137,25 @@ body.ukraine {
 
     user-select: none;
 }
+
+button.red-button {
+    position: absolute;
+    top: auto;
+    left: 10px;
+    bottom: 10px;
+
+    background-image: url('../src/red-button/button.svg');
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    border-radius: 99px;
+
+    width: 40px;
+    height: 40px;
+}
+button.red-button:hover {
+    background-image: url('../src/red-button/button-hover.svg');
+}
+button.red-button:active {
+    background-image: url('../src/red-button/button-clicked.svg');
+}
