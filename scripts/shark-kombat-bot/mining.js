@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const energyText = document.getElementById('energy');
     const progress = document.getElementById('new-level');
     const profitPerTapText = document.getElementById('profit-per-tap');
-    const profitPerHourText = document.getElementById('profit-per-hour');
+    // const profitPerHourText = document.getElementById('profit-per-hour');
     const currentLevelName = document.getElementById('current-level-name');
     const currentLevelProgress = document.getElementById('current-level-progress');
     const sharkImage = document.getElementById('shark-image');
@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, energyRestoreInterval);
 
-    setInterval(() => {
-        profitPerHour = balance / ((Date.now() - JSON.parse(localStorage.getItem('sharkKombatBotState')).lastSaved) / (1000 * 60 * 60));
-        profitPerHourText.textContent = `+${profitPerHour.toFixed(2)}`;
-        saveGameState();
-    }, 60000);
+    // setInterval(() => {
+    //     profitPerHour = balance / ((Date.now() - JSON.parse(localStorage.getItem('sharkKombatBotState')).lastSaved) / (1000 * 60 * 60));
+    //     profitPerHourText.textContent = `+${profitPerHour.toFixed(2)}`;
+    //     saveGameState();
+    // }, 60000);
 });
