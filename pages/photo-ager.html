@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Ager</title>
+    <link rel="stylesheet" href="../styles/photo-ager.css">
+</head>
+<body>
+    <input type="file" id="upload" accept="image/*" multiple>
+    <div class="preview-container">
+        <div class="preview">
+            <p>Flag Image:</p>
+            <img id="image-preview" src="#" alt="Image Preview">
+        </div>
+        <div class="preview">
+            <p>Processed Flag:</p>
+            <canvas id="processed-preview" width="300" height="200"></canvas>
+        </div>
+    </div>
+    <label for="output-size" id="output-size-label">Output Image Size (px):</label>
+    <input type="number" id="output-size" value="512">
+    <label>
+        <input type="checkbox" id="proportional-resize" checked>
+        Proportional Resize
+    </label>
+    <div id="non-proportional-size" style="display: none;">
+        <label for="second-dimension-size">Height (px):</label>
+        <input type="number" id="second-dimension-size" value="340">
+    </div>
+
+    <label for="texture-select">Select Texture:</label>
+    <select id="texture-select">
+        <option value="null" selected>None</option>
+        <option value="1.jpg">Texture 1</option>
+        <option value="2.jpg">Texture 2</option>
+        <option value="3.jpg">Texture 3</option>
+        <option value="4.jpg">Texture 4</option>
+        <option value="5.jpg">Texture 5</option>
+        <option value="6.jpg">Texture 6</option>
+        <option value="7.jpg">Texture 7</option>
+        <option value="8.jpg">Texture 8</option>
+        <option value="9.jpg">Texture 9</option>
+        <option value="10.jpg">Texture 10</option>
+        <option value="11.jpg">Texture 11</option>
+        <option value="12.jpg">Texture 12</option>
+        <option value="13.jpg">Texture 13</option>
+        <option value="14.jpg">Texture 14</option>
+        <option value="15.jpg">Texture 15</option>
+        <option value="16.jpg">Texture 16</option>
+    </select>
+
+    <label for="texture-opacity">Texture Opacity:</label>
+    <input type="range" id="texture-opacity" min="0" max="1" step="0.1" value="0.9">
+
+    <label for="aging-strength">Aging Color Strength:</label>
+    <input type="range" id="aging-strength" min="0" max="1" step="0.1" value="0.1">
+
+    <label for="blend-mode">Blend Mode:</label>
+    <select id="blend-mode">
+        <option value="source-over">Normal</option>
+        <option value="multiply" selected>Multiply</option>
+        <option value="screen">Screen</option>
+        <option value="overlay">Overlay</option>
+    </select>
+
+    <progress id="processing-progress" value="0" max="100"></progress>
+    <button id="download-btn">Download All</button>
+
+    <script src="../scripts/photo-ager.js"></script>
+</body>
+</html>
